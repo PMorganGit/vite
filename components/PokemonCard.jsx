@@ -1,15 +1,14 @@
 function PokemonCard() {
   const pokemon = pokemonList[1];
   console.log(pokemon);
-  const imgabs = typeof pokemon.imgSrc === "undefined";
 
   return (
     <div>
       <figure>
-        {imgabs ? (
-          <p>???</p>
-        ) : (
+        {pokemon.imgSrc ? (
           <img src={pokemon.imgSrc} alt={pokemon.name}></img>
+        ) : (
+          "???"
         )}
         <figcaption>{pokemon.name}</figcaption>
       </figure>
