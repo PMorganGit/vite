@@ -1,6 +1,6 @@
 
 function PokemonCard({pokemon}) {
-const {name, imgSrc}  = pokemon[0]
+const {name, imgSrc}  = pokemon
 
   return (
     <div>
