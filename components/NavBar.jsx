@@ -1,4 +1,5 @@
 import React from "react";
+import '../src/style.scss';
 
 
 function NavBar( {handleClickNext, handleClickPrev, ButPrev, ButNext}) {
@@ -6,9 +7,9 @@ function NavBar( {handleClickNext, handleClickPrev, ButPrev, ButNext}) {
 
     return (
         <>
-          <div>
-            {ButPrev && <button onClick={handleClickPrev}>Précédent</button>}
-            {ButNext && <button onClick={handleClickNext}>Suivant</button>}
+          <div className="Bouton">
+            {ButPrev && <button className="ButPrev" onClick={handleClickPrev}>Précédent</button>}
+            {ButNext && <button className="ButNext" onClick={handleClickNext}>Suivant</button>}
           </div>
         </>
       );

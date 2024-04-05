@@ -1,16 +1,17 @@
+import '../src/style.scss';
 
 function PokemonCard({pokemon}) {
 const {name, imgSrc}  = pokemon
 
   return (
-    <div>
-      <figure>
+    <div className="CardPoke">
+      <figure className="fig">
         {imgSrc ? (
           <img src={imgSrc} alt={name}></img>
         ) : (
           "???"
         )}
-        <figcaption>{name}</figcaption>
+        <figcaption className="FigCap">{name}</figcaption>
       </figure>
     </div>
   );
