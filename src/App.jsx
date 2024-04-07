@@ -54,10 +54,8 @@ function App() {
       <div>
         <PokemonCard pokemon={pokemonList[pokemonIndex]} />
         <NavBar
-          handleClickPrev={handleClickPrev}
-          handleClickNext={handleClickNext}
-          ButPrev={pokemonIndex > 0}
-          ButNext={pokemonIndex < pokemonList.length - 1}
+          pokemonList={pokemonList}
+          setPokemonIndex={setPokemonIndex}
         />
       </div>
     </>
